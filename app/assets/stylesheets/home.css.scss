@@ -23,3 +23,259 @@ select {
 #decoration {
 	width: 50px;
 }
+
+#chart-wrap {
+	position: relative;
+}
+
+.chart {
+	position: absolute;
+	top: 15px;
+	left: 5px;
+	width: 112px;
+	height: 254px;
+}
+
+.strings {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+
+.string {
+	float: left;
+	height: 100%;
+	border-left: solid #000 1px;
+	width: 1px;
+	margin-left: 20px;
+}
+
+.string-6 {
+	margin-left: 0;
+}
+
+.notes {
+	position: absolute;
+	top: 0;
+}
+
+.note {
+	background: #000;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	position: absolute;
+}
+
+/* Fret layout ================== */
+
+$fret: 21px;
+
+.frets {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 110px;
+	height: 100%;
+}
+
+.fret {
+	margin-top: 20px;
+	border-top: solid #000 1px;
+	width: 100%;
+}
+
+.fret-0 {
+	margin-top: 0;
+	border-top: solid #000 2px;
+}
+
+.fret-numbers {
+	position: absolute;
+	left: -20px;
+	font-size: 10px;
+	text-align: center;
+}
+
+.fret-number {
+	position: absolute;
+}
+
+.fret-number-3 {
+	top: $fret * 2;
+}
+
+.fret-number-5 {
+	top: $fret * 4;
+}
+
+.fret-number-7 {
+	top: $fret * 6;
+}
+
+.fret-number-10 {
+	top: $fret * 9;
+}
+
+.fret-number-12 {
+	top: $fret * 11;
+}
+
+
+/* Slide the notes container to a barre position ================== */
+
+.note-base-0 {
+	top: 0;
+}
+
+.note-base-1 {
+	top: 21px;
+}
+
+.note-base-2 {
+	top: 42px;
+}
+
+.note-base-3 {
+	top: 63px;
+}
+
+.note-base-4 {
+	top: 84px;
+}
+
+.note-base-5 {
+	top: 105px;
+}
+
+.note-base-6 {
+	top: 126px;
+}
+
+.note-base-7 {
+	top: 147px;
+}
+
+.note-base-8 {
+	top: 168px;
+}
+
+.note-base-9 {
+	top: 189px;
+}
+
+.note-base-10 {
+	top: 210px;
+}
+
+.note-base-11 {
+	top: 231px;
+}
+
+.note-base-12 {
+	top: 252px;
+}
+
+/* Position the notes over each string ================== */
+
+.note-string-6 {
+	left: 1px;
+}
+
+.note-string-5 {
+	left: 22px;
+}
+
+.note-string-4 {
+	left: 44px;
+}
+
+.note-string-3 {
+	left: 66px;
+}
+
+.note-string-2 {
+	left: 88px;
+}
+
+.note-string-1 {
+	left: 110px;
+}
+
+/* Position the notes over each fret ================== */
+
+.note-X {
+	background: transparent;
+	border-radius: 0;
+	line-height: 8px;
+	text-align: center;
+}
+
+.note-X:after {
+	content: "X";
+}
+
+.note-0 {
+	background: #fff;
+	border: solid #000 1px;
+	width: 8px;
+	height: 8px;
+}
+
+.note-1 {
+	top: $fret;
+}
+
+.note-2 {
+	top: $fret * 2;
+}
+
+.note-3 {
+	top: $fret * 3;
+}
+
+.note-4 {
+	top: $fret * 4;
+}
+
+.note-5 {
+	top: $fret * 5;
+}
+
+.note-6 {
+	top: $fret * 6;
+}
+
+.note-7 {
+	top: $fret * 7;
+}
+
+.note-8 {
+	top: $fret * 8;
+}
+
+.note-9 {
+	top: $fret * 9;
+}
+
+.note-10 {
+	top: $fret * 10;
+}
+
+.note-11 {
+	top: $fret * 11;
+}
+
+.note-12 {
+	top: $fret * 12;
+}
+
+
+
+
+
+
+
+
+

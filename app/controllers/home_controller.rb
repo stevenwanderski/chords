@@ -7,6 +7,7 @@ class HomeController < ApplicationController
       
       @chord_name = chord.name
       @chord_notes = chord.get_notes.join(' - ')
+      @chord_chart = chord.get_barre_large
       
     end
     

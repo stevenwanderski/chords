@@ -1,47 +1,76 @@
-<h1>Chord Generator</h1>
+<div class="row">
+	
+	<div class="span4">
 
-<%= form_tag '/', :remote => true do %>
-	<div class="clearfix">
+		<h1>Chord Generator</h1>
+
+		<%= form_tag '/', :remote => true do %>
+			<div class="clearfix">
 	
-		<div class="left">
-		<label>Note</label>
-		<select name="note">
-			<option value="A">A</option>
-			<option value="B">B</option>
-			<option value="C">C</option>
-			<option value="D">D</option>
-			<option value="E">E</option>
-			<option value="F">F</option>
-			<option value="G">G</option>
-		</select>
-		</div>
+				<div class="left">
+				<label>Note</label>
+				<select name="note">
+					<option value="A">A</option>
+					<option value="B">B</option>
+					<option value="C">C</option>
+					<option value="D">D</option>
+					<option value="E">E</option>
+					<option value="F">F</option>
+					<option value="G">G</option>
+				</select>
+				</div>
 	
-		<div class="left">
-		<label># / b</label>
-		<select name="accidental" id="accidental">
-			<option value=""></option>
-			<option value="sharp"># (sharp)</option>
-			<option value="flat">b (flat)</option>
-		</select>
-		</div>
+				<div class="left">
+				<label># / b</label>
+				<select name="accidental" id="accidental">
+					<option value=""></option>
+					<option value="sharp"># (sharp)</option>
+					<option value="flat">b (flat)</option>
+				</select>
+				</div>
 	
-		<div class="left">
-		<label>Type</label>
-		<select name="type">
-			<option value="major">Major</option>
-			<option value="minor">Minor</option>
-			<option value="dom7">7th</option>
-			<option value="major7">Major7</option>
-			<option value="minor7">Minor7</option>
-		</select>
-		</div>
+				<div class="left">
+				<label>Type</label>
+				<select name="type">
+					<option value="major">Major</option>
+					<option value="minor">Minor</option>
+					<option value="dom7">7th</option>
+					<option value="major7">Major7</option>
+					<option value="minor7">Minor7</option>
+				</select>
+				</div>
+	
+			</div>
+	
+			<input type="submit" value="Get notes!" class="btn btn-success btn-large" />
+	
+		<% end %>
+
+		<div id="results"></div>
 	
 	</div>
 	
-	<input type="submit" value="Get notes!" class="btn btn-success btn-large" />
-	
-<% end %>
+	<div class="span8">
+		
+		<div id="chart-wrap">
+			<div id="barre-full"></div>
+			<div id="barre-half"></div>
+		</div>
+			
+	</div>
 
-<div id="results"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
