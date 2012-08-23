@@ -1,0 +1,25 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#page {
+	width: 940px;
+	margin: 30px auto;
+}
+
+.left {
+	float: left;
+	margin-right: 10px;
+}
+
+label {
+  font-size: 20px;
+}
+
+select {
+  width: 80px;
+}
+
+#decoration {
+	width: 50px;
+}
